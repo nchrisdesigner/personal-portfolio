@@ -1,0 +1,123 @@
+@import 'tailwindcss';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+  transition: all .3s;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --min-width: min(136rem, 100%);
+
+  --padding-lg: 9.6rem;
+  --padding-md: 7.2rem;
+  --padding-sm: 4.8rem;
+  --padding-xs: 2.4rem;
+  --padding-xx: 1rem;
+
+  /* --color-bg-dark: hsl(240, 2%, 9%); */
+  --color-bg-dark: hsl(216, 12%, 8%);
+  --color-text-dark: hsl(240, 4%, 14%);
+  --color-text-dark-2: hsl(216, 12%, 8%);
+
+  --color-bg-light: hsl(0, 0%, 100%);
+  --color-text-primary: hsl(240, 18%, 96%);
+  --color-text-secondary: hsl(24, 6%, 85%);
+
+  --color-primary: hsl(241, 100%, 69%);
+  --color-primary-light: hsl(242, 85%, 69%);
+  --color-primary-dark: hsl(248, 68%, 51%);
+  --color-accent-dark: hsl(246, 62%, 42%);
+
+  --color-emerald: hsl(145, 83%, 55%);
+  --color-emerald-light: hsl(81, 100%, 59%);
+  --color-golden:  hsl(47, 82%, 57%);
+
+}
+
+body[data-theme="light"] {
+  background: var(--color-bg-light);
+  color: var(--color-text-dark);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-bg-dark);
+  color: var(--color-text-primary);
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  display: none;  /* Hide the scrollbar */
+}
+
+* {
+  scrollbar-width: none;  /* Firefox hides the scrollbar */
+  -ms-overflow-style: none;  /* IE and Edge */
+}
+
+a{
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+.section{
+  width: var(--min-width);
+  margin-inline: auto;
+}
+
+.padding{
+  padding: var(--padding-lg) var(--padding-sm);
+}
+
+:where(.purple-text) {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+:where(.emerald-text) {
+  color: var(--color-emerald);
+  font-weight: 600;
+}
+:where(.purple-text) {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.grain-container{
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.grain{
+  width: 100%;
+  height:100%;
+  background-size: 128px;
+  background-repeat: repeat;
+  background-image: url(https://framerusercontent.com/images/rR6HYXBrMmX4cRpXfXUOvpvpB0.png);
+  opacity: 0.06;
+  border-radius: 0;
+
+}
+
+@media screen and (width < 500px){
+  .padding{
+    padding: var(--padding-md) var(--padding-xx);
+  }
+}
+
+
+

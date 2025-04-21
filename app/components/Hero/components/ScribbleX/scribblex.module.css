@@ -1,0 +1,12 @@
+.svg{
+  position: absolute;
+  top: 0;
+  right: 25%;
+}
+
+@media screen and (width < 600px){
+  .svg{
+    top: -15%;
+    transform: scale(.85);
+  }
+}

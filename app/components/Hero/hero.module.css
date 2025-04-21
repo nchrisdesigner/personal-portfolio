@@ -1,0 +1,47 @@
+.header{
+  min-height: 100vh;
+  scroll-margin-top: 5rem;
+}
+
+.nav {
+  padding: 3.2rem 0 1.2rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.secondaryTitle,
+.primaryTitle,
+.text {
+  text-align: center;
+}
+
+.secondaryTitle {
+  font-size: clamp(1rem, 0.3446rem + 1.7vw, 1.7578rem);
+  color: var(--color-primary-light);
+}
+
+.primaryTitle {
+  font-size: clamp(5.2rem, 3rem + 10vw, 12.5rem);
+  line-height: 1;
+}
+
+.text {
+  width: min(100%, 70ch);
+  margin-inline: auto;
+  font-size: clamp(1.26rem, 1.1506rem + 0.5149vw, 1.5625rem);
+  padding: var(--padding-xs) 0;
+}
+
+
+
+@media screen and (width < 500px) {
+  .secondaryTitle,
+  .primaryTitle,
+  .text {
+    text-align: left;
+  }
+
+  .secondaryTitle {
+    padding: .25rem 0;
+  }
+}

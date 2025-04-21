@@ -1,0 +1,117 @@
+.aboutContainer {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  view-timeline: --about;
+}
+
+
+.titleContainer {
+  position: relative;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  padding: var(--padding-xs) 0;
+}
+
+.primaryTitle {
+  font-size: clamp(6.2rem, 2.8rem + 12.25vw, 13.5rem);
+  /* font-size: clamp(4.8rem, 2rem + 7vw, 12.8rem); */
+  line-height: 1;
+  max-width: 17ch;
+  transform: translate3d(-107.977px, 11.303px, 10px) rotateY(-20deg) rotateX(-10deg);
+  animation: rotate 2.5s ease-out forwards;
+  animation-timeline: --about;
+  animation-range-start: 8%;
+  animation-range-end: 35%;
+}
+
+
+@keyframes rotate {
+  0% {
+    transform: translate3d(-107.977px, 11.303px, 10px) rotateY(-20deg) rotateX(-10deg);
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0) rotateY(0) rotateX(0) translate(0px, 0px);
+  }
+}
+
+.secondaryTitle {
+  position: absolute;
+  color: var(--color-primary);
+  max-width: 16ch;
+  line-height: 1.2;
+  z-index: 10;
+  font-size: clamp(1.8rem, 1.462rem + 1.5904vw, 2.7344rem);
+}
+
+.secondaryTitle:nth-of-type(1){
+  transform: rotate(-15deg);
+  top: 0%;
+  left: 3%;
+}
+.secondaryTitle:nth-of-type(2){
+  transform: rotate(12deg);
+  top: 25%;
+  right: 10%;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: var(--padding-xs) 0;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin-top: 6.4rem;
+}
+
+.lineSVG {
+  grid-column: 4/6;
+  grid-row: 1/2;
+}
+
+.paragraph {
+  font-size: clamp(1.6rem, 0.9315rem + 0.9423vw, 1.8rem);
+  line-height: 1.5;
+  width: min(70ch, 100%);
+  text-wrap: pretty;
+  margin-bottom: 1rem;
+  color: var(--white);
+  grid-column: 6/-1;
+  grid-row: 2/3;
+}
+
+
+
+@media screen and (width < 865px){
+
+  .gridContainer{
+    grid-template-rows: 1fr;
+  }
+}
+
+@media screen and (width < 690px){
+  .gridContainer{
+    margin-top: 4.8rem;
+  }
+  .lineSVG {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    opacity: 0;
+  }
+  
+  .paragraph {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+  }
+}
+
+@media screen and (width < 450px) {
+  .primaryTitle {
+    font-size: clamp(5.5rem, 6.25rem + 6.5vw, 9.0313rem);
+  }
+}
