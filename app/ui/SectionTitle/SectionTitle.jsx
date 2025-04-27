@@ -9,10 +9,17 @@ const anton = Anton({
 })
 
 
-const SectionTitle = () => {
+const SectionTitle = ({ primaryTitle = 'MY STORY', secondaryTitle = '( So Far )', colorPrimary = "#ffffff", colorSecondary = "#ffffff" }) => {
   return (
     <div className='text-center flex flex-col gap-2'>
-      <h2 className={`${styles.primaryTitle} ${anton.className}`}>MY STORY</h2>
+
+      <h2 
+      className={`${styles.primaryTitle} ${anton.className}`}
+      style={{color: colorPrimary}}
+      >
+      {primaryTitle}
+      </h2>
+
       <motion.h3
         initial={{
           fontWeight: '400',
@@ -27,12 +34,17 @@ const SectionTitle = () => {
             type: 'spring'
           }
         }}
-        className={`${styles.label}`}
+        className={styles.label}
+        style={{color: colorSecondary}}
       >
-        ( So Far )
+        {secondaryTitle}
       </motion.h3>
+
     </div>
   )
 }
 
 export default SectionTitle
+
+// MY STORY
+// ( So Far )

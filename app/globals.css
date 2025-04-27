@@ -1,6 +1,6 @@
 @import 'tailwindcss';
 
-*,
+/* *,
 *::before,
 *::after {
   box-sizing: border-box;
@@ -8,7 +8,7 @@
   margin: 0;
 
   transition: all .3s;
-}
+} */
 
 :root {
   font-size: 62.5%;
@@ -19,7 +19,7 @@
   --padding-md: 7.2rem;
   --padding-sm: 4.8rem;
   --padding-xs: 2.4rem;
-  --padding-xx: 1rem;
+  --padding-xx: 1.2rem;
 
   /* --color-bg-dark: hsl(240, 2%, 9%); */
   --color-bg-dark: hsl(216, 12%, 8%);
@@ -46,6 +46,7 @@
   --color-emerald: hsl(145, 83%, 55%);
   --color-emerald-light: hsl(81, 100%, 59%);
   --color-golden:  hsl(47, 82%, 57%);
+  --color-yellow: #ffc75d;
 }
 
 
@@ -115,26 +116,7 @@ a{
   font-weight: 600;
 }
 
-.grain-container{
-  position: fixed;
-  top: 0;
-  left: 0;
 
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-}
-
-.grain{
-  width: 100%;
-  height:100%;
-  background-size: 128px;
-  background-repeat: repeat;
-  background-image: url(https://framerusercontent.com/images/rR6HYXBrMmX4cRpXfXUOvpvpB0.png);
-  opacity: 0.06;
-  border-radius: 0;
-
-}
 
 @media screen and (width < 500px){
   .padding{

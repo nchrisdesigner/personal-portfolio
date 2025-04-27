@@ -5,8 +5,9 @@ import Image from 'next/image'
 import astro from './../../assets/astro.svg'
 import css from './../../assets/css.svg'
 import motion from './../../assets/motion.svg'
-import { Anton, Rock_Salt, Indie_Flower } from "next/font/google"
 import { skills } from '@/app/data/data'
+import { MdBolt } from "react-icons/md";
+import { Anton, Rock_Salt, Indie_Flower } from "next/font/google"
 
 
 const indie = Indie_Flower({
@@ -80,6 +81,30 @@ const Skills = () => {
             })}
           </ul>
         </div>
+
+        {/* <div>
+          <a  href="#contact"
+            className="relative inline-flex h-16 active:scale-95 transistion overflow-hidden p-[1px] focus:outline-none"
+          >
+             <span
+              className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#e7029a_0%,#f472b6_50%,#bd5fff_100%)]"
+            > 
+  
+            </span>
+            <span
+              className="inline-flex h-full w-full cursor-pointer items-center justify-center  bg-slate-950 px-7 text-xl font-medium text-white backdrop-blur-3xl gap-2 undefined"
+            >
+              <MdBolt className={styles.icon} />
+              Steal my Brainpower
+
+            </span>
+          </a>
+        </div> */}
+
+        <a className={styles.btn} href="#contact">
+          <MdBolt className={styles.icon} />
+          <span className={styles.btnText}>Steal my Brainpower</span>
+        </a>
       </div>
     </Container>
   )

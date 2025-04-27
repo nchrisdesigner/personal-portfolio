@@ -1,0 +1,6 @@
+.text {
+  width: min(75ch, 100%);
+  font-size: clamp(1.6rem, 0.9315rem + 0.9423vw, 1.8rem);
+  line-height: 1.5;
+  text-wrap: pretty;
+}

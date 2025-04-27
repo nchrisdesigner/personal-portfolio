@@ -1,0 +1,33 @@
+.footerTitle{
+  font-size: clamp(5.76rem, 1.5227rem + 7vw, 12.2rem);
+  line-height: 1;
+}
+
+.footerMiniTitle{
+  font-size: clamp(1rem, 0.9122rem + 0.7vw, 2.4rem);
+  font-weight: 600;
+}
+
+.text {
+  width: min(75ch, 100%);
+  font-size: clamp(1.2rem, 0.9rem + 0.7vw, 1.6rem);
+  line-height: 1.5;
+  text-wrap: pretty;
+}
+
+.socialIconsContainer{
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.2rem;
+  /* border: 1px solid white; */
+  /* padding: 2.4rem 6.8rem; */
+  /* background: #00000060; */
+  border-radius: 3px;
+  /* border: 1px dashed hsla(0, 0%, 100%, 0.242); */
+
+  transition-duration: .7s;
+  transition-property: transform,border-top, border-left, border-bottom, border-right,
+    box-shadow;
+}

@@ -1,0 +1,109 @@
+.lightButtonBtn {
+  position: relative;
+  height: 100px;
+  display: flex;
+  align-items: flex-end;
+  outline: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  /* transform: scale(0.5); */
+}
+
+.buttonHolder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  background-color: #0a0a0a;
+  border-radius: 5px;
+  color: #0f0f0f;
+  font-weight: 700;
+  font-size: .8rem;
+  transition: 300ms;
+  outline: #0f0f0f 2px solid;
+  outline-offset: 20;
+}
+
+.buttonHolder svg {
+  height: 50px;
+  fill: #0f0f0f;
+  transition: 300ms;
+}
+
+.lightHolder {
+  position: absolute;
+  height: 100px;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dot {
+  position: absolute;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #0a0a0a;
+  border-radius: 10px;
+  z-index: 2;
+}
+
+.light {
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 100px;
+  clip-path: polygon(50% 0%, 25% 100%, 75% 100%);
+  background: transparent;
+}
+
+.lightButtonBtn:hover .buttonHolder svg {
+  fill: rgba(0, 119, 181, 1); /* LinkedIn blue */
+}
+
+.lightButtonBtn:hover .buttonHolder {
+  color: rgba(0, 119, 181, 1); /* LinkedIn blue */
+  outline: rgba(0, 119, 181, 1) 2px solid;
+  outline-offset: 2px;
+}
+
+.lightButtonBtn:hover .lightHolder .light {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 119, 181, 1) 0%,
+    rgba(255, 255, 255, 0) 75%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+
+.btnLinkedIn{
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  border: none;
+
+  transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  border-radius: 100px;
+  font-weight: 600;
+  place-content: center;
+
+  padding: 1.2rem 3.2rem;
+  font-size: 1.2rem;
+  line-height: 1rem;
+
+  background-color: #0077b5;
+
+  color: #fff;
+}
+
+.btnLinkedIn:hover {
+  color: #ffffff;
+  background-color: rgba(40, 57, 239, 0.5);
+}

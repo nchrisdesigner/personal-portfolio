@@ -16,10 +16,19 @@
   padding: 0px 20px;
   border-radius: 3px;
   font-weight: 600;
-  transform: scale(0.89);
+  transform: scale(0.89) translateZ(0);
   position: relative;
   margin-top: 2rem;
 }
+.button:hover {
+  transform: scale(.9) translateZ(0);
+  transform-origin: center;
+}
+
+.button:focus {
+  outline: none;
+}
+
 .button:not(:hover) .hide,
 .button:not(:hover) .icon::before,
 .button:not(:hover) .icon::after {
@@ -264,4 +273,15 @@
   right: -132px;
   top: -30px;
   white-space: nowrap;
+}
+
+
+.button {
+  will-change: transform;
+}
+.icon,
+.paddingLeft,
+.paddingRight,
+.background {
+  will-change: transform;
 }

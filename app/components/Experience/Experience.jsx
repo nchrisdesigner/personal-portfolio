@@ -2,14 +2,14 @@ import styles from './experience.module.css'
 import { experience } from '@/app/data/data'
 import JobTitle from './components/JobTitle/JobTitle'
 import TechnologiesList from './components/TechnologiesList/TechnologiesList'
-import SectionTitle from './components/SectionTitle/SectionTitle'
+import SectionTitle from '../../ui/SectionTitle/SectionTitle'
 
 const Experience = () => {
 
   return (
     <div className={styles.experienceContainer}>
 
-      <SectionTitle />
+      <SectionTitle primaryTitle='MY STORY' secondaryTitle='( So Far )' />
       <div className={styles.cards}>
         <div className={styles.cardGrid}>
           {experience.map(({ id, title, company, duration, description, technologies }) => {
