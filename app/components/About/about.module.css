@@ -14,6 +14,7 @@
 
 .primaryTitle {
   font-size: clamp(6.2rem, 2.8rem + 12.25vw, 13.5rem);
+  /* color: var(--color-primary-900); */
   /* font-size: clamp(4.8rem, 2rem + 7vw, 12.8rem); */
   line-height: 1;
   max-width: 17ch;
@@ -37,7 +38,14 @@
 
 .secondaryTitle {
   position: absolute;
-  color: var(--color-primary);
+  color: var(--color-emerald);
+  color: #70EE9C;
+  /* color: #519E8A; */
+  color: #FCBA04  ;
+  color: #F02D3A;
+  color: #df2330;
+  color: #4936F5;
+  color: #ff2a4b;
   max-width: 16ch;
   line-height: 1.2;
   z-index: 10;

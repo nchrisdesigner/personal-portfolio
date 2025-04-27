@@ -16,9 +16,9 @@ export default function Home() {
         <Experience />
         <Contact />
       </main>
-      {/* <div className="grain-container">
+      <div className="grain-container">
         <div className="grain"></div>
-      </div> */}
+      </div>
 
       <a href="#header" className="fixed bottom-12 right-12">
         <button

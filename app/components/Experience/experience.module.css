@@ -7,63 +7,6 @@
   --card-height: 50vh;
   --card-gap: .25rem;
   --num: 7;
-  /* view-timeline: --card-view; */
-}
-
-.primaryTitle {
-  font-size: 4.8rem;
-  line-height: 1.1;
-  letter-spacing: -0.03em;
-  text-align: center;
-  font-weight: 600;
-}
-
-.information {
-  display: flex;
-  gap: 1.6rem;
-  align-items: center;
-}
-
-.company {
-  font-weight: 600;
-  font-size: 1.8rem;
-}
-
-.duration {
-  color: #ffffff90;
-}
-
-.title {
-  color: var(--color-primary);
-  font-style: italic;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 3rem;
-}
-
-.description {
-  font-size: 1.4rem;
-  line-height: 1.5;
-  max-width: 70ch;
-}
-
-.technologiesContainer{
-    display: flex;
-    gap: .8rem;
-    padding: var(--padding-xx) 0 ;
-}
-
-.technology{
-  /* border: 1px dashed #ffffff80; */
-  border: 1px dashed hsl(242, 85%, 69%);
-  padding: .4rem .8rem;
-  font-size: 1.2rem;
-  background: hsl(240, 7%, 13%);
-  color: var(--color-primary-light);
-  color: #fff;
-  background: #18181B;
-  background: hsl(240, 6%, 11%);
-  font-weight: 600;
 }
 
 .cardGrid {
@@ -83,10 +26,8 @@
 
 .cardInner {
   background-color: var(--color-bg-dark);
-  /* background-color: hsl(216, 12%, 6%); */
   backdrop-filter: blur(5px);
   border: 1px solid var(--color-primary);
-
   background: linear-gradient(var(--color-bg-dark), var(--color-bg-dark)) padding-box,
               linear-gradient(145deg, transparent 35%,var(--color-primary), var(--color-accent-dark)) border-box;
 
@@ -95,9 +36,9 @@
   border-radius: 3px;
   display: flex;
   align-items: center;
-  /* animation: both linear serviceCard;
+  animation: both linear serviceCard;
   animation-timeline: --card-view;
-  animation-range: exit-crossing calc(((var(--i) - 1) / var(--num)) * 100%) exit-crossing calc(((var(--i)) / var(--num)) * 100%) */
+  animation-range: exit-crossing calc(((var(--i) - 1) / var(--num)) * 100%) exit-crossing calc(((var(--i)) / var(--num)) * 100%)
 }
 
 @supports (animation-timeline: scroll()){
@@ -106,6 +47,12 @@
     animation-timeline: --card-view;
     animation-range: exit-crossing calc(((var(--i) - 1) / var(--num)) * 100%) exit-crossing calc(((var(--i)) / var(--num)) * 100%)
   }
+}
+
+.cardInfo{
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
 }
 
 .card:nth-child(1) {
@@ -150,14 +97,39 @@
   --b: #ffffff;
 }
 
+.information {
+  display: flex;
+  gap: .8rem;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.company {
+  font-weight: 600;
+  font-size: clamp(1.6rem, 1.2615rem + 1.2vw, 2.2rem);
+  line-height: 1.1;
+}
+
+.duration {
+  color: var(--color-primary);
+  font-size: .9rem;
+  font-weight: 600;
+  background: #0D0F2E;
+  padding: .5rem 1rem;
+  border: .5px dashed var(--color-primary);
+  border-radius: 3px;
+}
+
+.description {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  max-width: 70ch;
+}
+
+
 
 @keyframes serviceCard {
-  /* from{
-    transform: scale(1) rotate(0);
-  } */
   to {
-    /* border-color: var(--b); */
-    /* filter: blur(calc( ((var(--num) - var(--i)) * 1px) )); */
     filter: blur(calc(((var(--num) - var(--i)) * 1px) - 2px));
     transform: scale(calc(1 - (0.015 * (var(--num) - var(--i)))))  rotate(var(--r));
   }

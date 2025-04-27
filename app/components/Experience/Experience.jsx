@@ -1,17 +1,17 @@
 import styles from './experience.module.css'
 import { experience } from '@/app/data/data'
+import JobTitle from './components/JobTitle/JobTitle'
+import TechnologiesList from './components/TechnologiesList/TechnologiesList'
+import SectionTitle from './components/SectionTitle/SectionTitle'
 
 const Experience = () => {
-  console.log(experience);
 
   return (
     <div className={styles.experienceContainer}>
-      <h2 className={styles.primaryTitle}>My Story (So Far)</h2>
 
+      <SectionTitle />
       <div className={styles.cards}>
-
         <div className={styles.cardGrid}>
-
           {experience.map(({ id, title, company, duration, description, technologies }) => {
             return (
               <div
@@ -19,23 +19,15 @@ const Experience = () => {
                 <div className={styles.cardInner}>
                   <div className={styles.cardInfo}>
                     <div className={styles.information}>
+                      <h5 className={styles.duration}>{duration}</h5>
                       <h4 className={styles.company}>{company}</h4>
-                      <h4 className={styles.duration}>({duration})</h4>
                     </div>
-                    <h3 className={styles.title}>{title}</h3>
+                    <JobTitle title={title} />
                     <p className={styles.description}>
                       {description}
                     </p>
 
-                    <ul className={styles.technologiesContainer}>
-                      {technologies.map((tech, i) => {
-                        return (
-                          <li key={i} className={styles.technology}>
-                            {tech}
-                          </li>
-                        )
-                      })}
-                    </ul>
+                    <TechnologiesList technologies={technologies} />
                   </div>
 
                 </div>

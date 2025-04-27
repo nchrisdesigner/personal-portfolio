@@ -72,7 +72,7 @@ export const experience = [
     id: 1,
     title: 'Front End Developer & Web Designer',
     company: 'EPSILONNET',
-    duration: 'May 2024 – Present',
+    duration: 'May 24 – Present',
     description: 'Designing and building digital experiences that align with real business needs. I translate branding into functional, beautiful interfaces — from responsive layouts to scalable component systems.',
     technologies: [
       'React',
@@ -86,7 +86,7 @@ export const experience = [
     id: 2,
     title: 'React Developer & UI Designer',
     company: 'DOTSOFT',
-    duration: 'May 2023 – May 2024',
+    duration: 'May 23 – May 24',
     description: 'Led UI/UX efforts for smart city and IoT applications, turning complex data into human-centric interfaces. Delivered intuitive dashboards and user flows that bridged the gap between sensors and users.',
     technologies: [
       'React',
@@ -103,7 +103,7 @@ export const experience = [
     id: 3,
     title: 'React Developer & UI Designer',
     company: 'NCSR Demokritos',
-    duration: 'Oct 2020 – May 2024',
+    duration: 'Oct 20 – May 24',
     description: 'Building digital tools for education and culture. Partnering with educators and curators to turn lessons and exhibits into interactive web applications that engage and teach.',
     technologies: [
       'React',
@@ -112,7 +112,6 @@ export const experience = [
       'CSS',
       'Figma',
       'Illustrator',
-      'Photoshop',
       'GSAP',
       'motion.dev'
     ]
@@ -121,7 +120,7 @@ export const experience = [
     id: 4,
     title: 'Web Designer & UI/UX Expert',
     company: 'OneDealer',
-    duration: 'Jun 2022 – May 2023',
+    duration: 'Jun 22 – May 23',
     description: 'Designed high-performance UIs for automotive web platforms. Balanced sleek aesthetics with complex functionality (booking, browsing, brand guidelines)',
     technologies: [
       'CSS',
@@ -135,7 +134,7 @@ export const experience = [
     id: 5,
     title: 'E-Commerce Manager & Web Designer',
     company: 'ariane.gr',
-    duration: 'Jun 2019 – May 2022',
+    duration: 'Jun 19 – May 22',
     description: 'Owned the full e-commerce stack — design, dev, SEO, campaigns, and UX. From creative graphics to conversion-driven interfaces.',
     technologies: [
       'CSS',
@@ -151,7 +150,7 @@ export const experience = [
     id: 6,
     title: 'Instructor (Web & Graphic Design)',
     company: 'ΙΕΚ ΑΛΦΑ',
-    duration: 'Jan 2020 – Mar 2023',
+    duration: 'Jan 20 – Mar 23',
     description: 'Teaching the next wave of designers and developers. From logo creation in Illustrator to full responsive web builds in HTML/CSS',
     technologies: [
       'CSS',

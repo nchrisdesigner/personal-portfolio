@@ -1,0 +1,17 @@
+.technologiesContainer{
+  display: flex;
+  gap: .8rem;
+  padding: var(--padding-xx) 0;
+  flex-wrap: wrap;
+}
+
+.technology{
+border: 1px dashed hsl(242, 85%, 69%);
+padding: .4rem .8rem;
+font-size: 1.2rem;
+color: var(--color-primary-light);
+color: #fff;
+background: hsl(240, 6%, 11%);
+font-weight: 600;
+cursor: pointer;
+}

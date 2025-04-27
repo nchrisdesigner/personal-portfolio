@@ -1,0 +1,13 @@
+.title {
+  color: var(--color-text-primary);
+  cursor: pointer;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: clamp(1.8rem, 1.3391rem + 2.3043vw, 3.125rem);
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+
+.hoverText {
+  transition:all .35s;
+}

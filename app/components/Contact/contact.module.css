@@ -27,16 +27,240 @@
   border: none;
   color: var(--white);
   background: var(--color-primary);
-  border: 1px solid var(--white);
+  background: linear-gradient(
+    90deg,
+    rgba(77, 54, 208, 1) 0%,
+    rgba(132, 116, 254, 1) 100%
+  );
+  border: 2px solid #fff;
+  border-radius: 50px;
   display: flex;
   align-items: center;
   gap: 1rem;
   font-size: 1.4rem;
-  text-transform: uppercase;
   font-weight: 600;
   transition: all .3s;
+  cursor: pointer;
 }
 
-.btn:hover{
+/* .btn:hover{
   background: var(--color-accent-dark);
+} */
+
+
+
+
+
+
+/* Anatomy Button */
+.buttonWrapper {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: linear-gradient(135deg, #4f46e5, #3b82f6);
+  color: #fff;
+  padding: 12px 28px;
+  border: 2px solid #ffffff;
+  border-radius: 3px;
+  font-weight: 600;
+  cursor: pointer;
+  /* overflow: hidden; */
+  transition: transform 0.3s;
+}
+
+.button:hover {
+  transform: scale(1.05);
+}
+
+/* Icon */
+.icon {
+  position: relative;
+}
+
+.iconSvg {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+/* Hide on Normal */
+.hide {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+/* Show on Hover */
+.button:hover .hide {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Text above icon */
+.textIcon {
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+/* Anatomy Title */
+.anatomyTitle {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Left Padding Line */
+.paddingLeft {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 2px;
+  background: #fff;
+}
+
+.paddingLeftLine {
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background: #fff;
+  left: -24px;
+  top: 11px;
+  transform: rotate(-50deg);
+}
+
+.paddingLeftLine::before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: #fff;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+}
+
+.paddingLeftText {
+  font-size: 12px;
+  position: absolute;
+  white-space: nowrap;
+  transform: rotate(50deg);
+  bottom: 30px;
+  left: -67px;
+}
+
+/* Right Padding Line */
+.paddingRight {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 2px;
+  background: #fff;
+}
+
+.paddingRightLine {
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background: #fff;
+  right: -24px;
+  top: 11px;
+  transform: rotate(50deg);
+}
+
+.paddingRightLine::before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: #fff;
+  border-radius: 50%;
+  left: 30px;
+  top: 0;
+}
+
+.paddingRightText {
+  font-size: 12px;
+  position: absolute;
+  white-space: nowrap;
+  transform: rotate(-50deg);
+  bottom: 34px;
+  left: 21px;
+}
+
+/* Background */
+.background {
+  position: absolute;
+}
+
+.background::before {
+  content: "";
+  position: absolute;
+  right: 27px;
+  bottom: -70px;
+  width: 100px;
+  height: 53px;
+  background: transparent;
+  border-radius: 0 0 22px 22px;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid transparent;
+}
+
+.backgroundText {
+  font-size: 12px;
+  position: absolute;
+  color: #fff;
+  bottom: -70px;
+  left: -115px;
+}
+
+/* Border */
+.border {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.border::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translate(50%, -50%);
+}
+
+.border::after {
+  content: "";
+  width: 2px;
+  height: 25px;
+  background: #fff;
+  position: absolute;
+  right: -10px;
+  top: -15px;
+  transform: translate(50%, -50%) rotate(60deg);
+}
+
+.borderText {
+  font-size: 12px;
+  position: absolute;
+  color: #fff;
+  right: -112px;
+  top: -30px;
+  white-space: nowrap;
 }

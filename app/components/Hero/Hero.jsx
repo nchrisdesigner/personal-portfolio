@@ -1,10 +1,10 @@
-import { Anton, Rock_Salt } from "next/font/google"
 import Image from 'next/image'
 import logo from './../../assets/logo-white.svg'
 import styles from './hero.module.css'
 import Container from "@/app/ui/Container/Container"
 import MiniTitle from "@/app/ui/MiniTitle/MiniTitle"
 import ScribbleX from "./components/ScribbleX/ScribbleX"
+import { Anton, Rock_Salt } from "next/font/google"
 
 const anton = Anton({
   subsets: ["latin"],
@@ -19,7 +19,7 @@ const rocksalt = Rock_Salt({
 const Hero = () => {
   return (
     <header id="header" className={styles.header}>
-      <nav className={`${styles.nav} section`} role="navigation" aria-label="Primary">
+      <nav className={`${styles.nav} section antialiased`} role="navigation" aria-label="Primary">
         <figure className={styles.logoContainer}>
           <Image width={220} alt="Nick's Christof Portfolio Logo" className={styles.logo} src={logo} />
         </figure>

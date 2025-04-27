@@ -23,6 +23,7 @@
 
   /* --color-bg-dark: hsl(240, 2%, 9%); */
   --color-bg-dark: hsl(216, 12%, 8%);
+  /* --color-bg-dark: #242824; */
   --color-text-dark: hsl(240, 4%, 14%);
   --color-text-dark-2: hsl(216, 12%, 8%);
 
@@ -30,16 +31,38 @@
   --color-text-primary: hsl(240, 18%, 96%);
   --color-text-secondary: hsl(24, 6%, 85%);
 
-  --color-primary: hsl(241, 100%, 69%);
+  --color-primary: hsl(237, 100%, 73%);
+  /* --color-primary: hsl(241, 100%, 69%); */
   --color-primary-light: hsl(242, 85%, 69%);
   --color-primary-dark: hsl(248, 68%, 51%);
   --color-accent-dark: hsl(246, 62%, 42%);
 
+  --color-primary-600: #4936f5;
+  --color-primary-700: #3e2ad8;
+  --color-primary-800: #3225ae;
+  --color-primary-900: #2d2689;  
+  --color-primary-950: #1c1650;
+
   --color-emerald: hsl(145, 83%, 55%);
   --color-emerald-light: hsl(81, 100%, 59%);
   --color-golden:  hsl(47, 82%, 57%);
-
 }
+
+
+/* 'royal-blue': {
+  '50': '#ecf0ff',
+  '100': '#dde4ff',
+  '200': '#c2cdff',
+  '300': '#9caaff',
+  '400': '#757cff',
+  '500': '#6461ff',
+  '600': '#4936f5',
+  '700': '#3e2ad8',
+  '800': '#3225ae',
+  '900': '#2d2689',
+  '950': '#1c1650',
+}, */
+
 
 body[data-theme="light"] {
   background: var(--color-bg-light);
@@ -118,6 +141,4 @@ a{
     padding: var(--padding-md) var(--padding-xx);
   }
 }
-
-
 
