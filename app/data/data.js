@@ -3,67 +3,77 @@ import ai from './../assets/ai.svg'
 import ps from './../assets/ps.svg'
 import ae from './../assets/ae.svg'
 import figma from './../assets/figma.svg'
-import next from './../assets/next-logo.svg'
+import next from './../assets/next.svg'
 import three from './../assets/three.svg'
 import tailwind from './../assets/tailwind.svg'
 import gsap from './../assets/gsap.svg'
 import blender from './../assets/blender.svg'
+import astro from './../assets/astro-2.svg'
 
+import astroImg from './../assets/astro.svg'
+import cssImg from './../assets/css.svg'
+import motionImg from './../assets/motion.svg'
 
 export const skills = [
   {
-    id: 1,
-    title: 'Next.js',
+    id: 0,
+    title: 'Astro & Next',
     desc: '(Because performance matters.)',
-    img: next
+    img: astro
   },
   {
-    id: 2,
-    title: 'GSAP',
+    id: 1,
+    title: 'GreenSock',
     desc: '(Motion done with purpose, not for show.)',
     img: gsap
   },
   {
-    id: 3,
+    id: 2,
     title: 'TypeScript',
     desc: '(Big apps. Big safety.)',
     img: ts
   },
   {
-    id: 4,
+    id: 3,
     title: 'Tailwind CSS',
     desc: '(Move fast, stay classy)',
     img: tailwind
   },
   {
-    id: 5,
+    id: 4,
     title: 'Three.js & R3F',
     desc: '(Real-time 3D in the browser? Yes, I do that.)',
     img: three
   },
   {
-    id: 6,
+    id: 5,
     title: 'Figma',
     desc: '(For Mockups and Prototyping)',
     img: figma
   },
   {
-    id: 7,
-    title: 'Ai/Ps',
-    desc: '(Brand systems, logos, and visuals.)',
+    id: 6,
+    title: 'Illustrator',
+    desc: '(Branding and Logo Design.)',
     img: ai
   },
   {
-    id: 8,
+    id: 7,
     title: 'Blender',
     desc: '(Custom 3D assets and motion-ready visuals)',
     img: blender
   },
   {
-    id: 9,
+    id: 8,
     title: 'After Effects',
-    desc: 'Microinteractions, UI motion, animations',
+    desc: '(Microinteractions, UI motion, animations)',
     img: ae
+  },
+  {
+    id: 9,
+    title: 'Photoshop',
+    desc: '(Image editing and graphics)',
+    img: ps
   },
 ]
 
@@ -178,4 +188,70 @@ export const experience = [
   //     'Wordpress'
   //   ]
   // },
+]
+
+export const properties = [
+  {
+    id: 1,
+    property: '--role',
+    val: 'designer + developer',
+    comment: 'I do both.'
+  },
+  {
+    id: 2,
+    property: '--superpower',
+    val: 'creative-logic-mode',
+    comment: 'Design + Code, without context loss.'
+  },
+  {
+    id: 3,
+    property: '--dependencies',
+    val: 'none',
+    comment: "I don't rely on other roles to ship."
+  },
+  {
+    id: 4,
+    property: '--delay',
+    val: '0ms',
+    comment: 'Fast execution.'
+  },
+  {
+    id: 5,
+    property: '--connecting-dots',
+    val: 'true',
+    comment: 'I see the full picture and act on it.'
+  },
+  {
+    id: 6,
+    property: '--communication-lag',
+    val: '0ms',
+    comment: 'No back-and-forth. Just clarity.'
+  },
+  {
+    id: 7,
+    property: '--middleman',
+    val: 'skipped',
+    comment: 'No handoffs, no extra steps.'
+  }
+]
+
+export const stackImages = [
+  {
+    id:1,
+    src:astroImg,
+    alt:'Astro Logo for development',
+    desc: 'Development'
+  },
+  {
+    id:2,
+    src:cssImg,
+    alt:'CSS Logo for styling',
+    desc: 'Styling'
+  },
+  {
+    id:3,
+    src:motionImg,
+    alt:'Motion.dev Logo for animations',
+    desc: 'Animations'
+  },
 ]

@@ -9,7 +9,7 @@ const Experience = () => {
   return (
     <div className={styles.experienceContainer}>
 
-      <SectionTitle primaryTitle='MY STORY' secondaryTitle='( So Far )' />
+      <SectionTitle primaryTitle='MY STORY' secondaryTitle='( So Far )' colorSecondary='var(--color-primary)' />
       <div className={styles.cards}>
         <div className={styles.cardGrid}>
           {experience.map(({ id, title, company, duration, description, technologies }) => {

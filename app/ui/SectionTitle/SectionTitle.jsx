@@ -9,13 +9,12 @@ const anton = Anton({
 })
 
 
-const SectionTitle = ({ primaryTitle = 'MY STORY', secondaryTitle = '( So Far )', colorPrimary = "#ffffff", colorSecondary = "#ffffff" }) => {
+const SectionTitle = ({ primaryTitle = 'MY STORY', secondaryTitle = '( So Far )', colorSecondary = "#ffffff" }) => {
   return (
     <div className='text-center flex flex-col gap-2'>
 
       <h2 
       className={`${styles.primaryTitle} ${anton.className}`}
-      style={{color: colorPrimary}}
       >
       {primaryTitle}
       </h2>

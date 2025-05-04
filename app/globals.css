@@ -10,38 +10,42 @@
   transition: all .3s;
 } */
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   font-size: 62.5%;
 
+  /* Layout */
   --min-width: min(136rem, 100%);
-
   --padding-lg: 9.6rem;
   --padding-md: 7.2rem;
   --padding-sm: 4.8rem;
   --padding-xs: 2.4rem;
   --padding-xx: 1.2rem;
 
-  /* --color-bg-dark: hsl(240, 2%, 9%); */
+  /* Colors */
   --color-bg-dark: hsl(216, 12%, 8%);
-  /* --color-bg-dark: #242824; */
+  --color-bg-light: hsl(0, 0%, 100%);
+
   --color-text-dark: hsl(240, 4%, 14%);
   --color-text-dark-2: hsl(216, 12%, 8%);
-
-  --color-bg-light: hsl(0, 0%, 100%);
   --color-text-primary: hsl(240, 18%, 96%);
   --color-text-secondary: hsl(24, 6%, 85%);
 
   --color-primary: hsl(237, 100%, 73%);
-  /* --color-primary: hsl(241, 100%, 69%); */
   --color-primary-light: hsl(242, 85%, 69%);
   --color-primary-dark: hsl(248, 68%, 51%);
   --color-accent-dark: hsl(246, 62%, 42%);
 
-  --color-primary-600: #4936f5;
-  --color-primary-700: #3e2ad8;
-  --color-primary-800: #3225ae;
+  --color-primary-500: hsl(246, 53%, 51%);
+  --color-primary-600: hsl(246, 91%, 59%);
+  --color-primary-700: hsl(247, 69%, 51%);
+  --color-primary-800: hsl(246, 65%, 41%);
   --color-primary-900: #2d2689;  
-  --color-primary-950: #1c1650;
+  --color-primary-950: hsl(246, 57%, 20%);
+ 
 
   --color-emerald: hsl(145, 83%, 55%);
   --color-emerald-light: hsl(81, 100%, 59%);
@@ -50,28 +54,9 @@
 }
 
 
-/* 'royal-blue': {
-  '50': '#ecf0ff',
-  '100': '#dde4ff',
-  '200': '#c2cdff',
-  '300': '#9caaff',
-  '400': '#757cff',
-  '500': '#6461ff',
-  '600': '#4936f5',
-  '700': '#3e2ad8',
-  '800': '#3225ae',
-  '900': '#2d2689',
-  '950': '#1c1650',
-}, */
-
-
 body[data-theme="light"] {
   background: var(--color-bg-light);
   color: var(--color-text-dark);
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 body {
@@ -81,7 +66,7 @@ body {
 }
 
 body::-webkit-scrollbar {
-  display: none;  /* Hide the scrollbar */
+  display: none;
 }
 
 * {
@@ -116,7 +101,13 @@ a{
   font-weight: 600;
 }
 
-
+.outline-text-white{
+  color: transparent;
+  -webkit-text-stroke-width: 1.5px;
+   -webkit-text-stroke-color: #fff;
+   position: relative;
+   display: inline-block;
+}
 
 @media screen and (width < 500px){
   .padding{

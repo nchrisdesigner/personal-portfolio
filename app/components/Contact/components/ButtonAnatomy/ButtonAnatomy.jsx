@@ -1,15 +1,8 @@
 'use client'
-
 import { useState } from "react"
 import styles from './buttonanatomy.module.css'
 import { PiCopy } from "react-icons/pi"
 import { ImCheckmark2 } from "react-icons/im"
-import { Rock_Salt } from "next/font/google"
-
-const rocksalt = Rock_Salt({
-  subsets: ["latin"],
-  weight: ["400"]
-})
 
 const ButtonAnatomy = () => {
   const [isCopied, setIsCopied] = useState(false)
@@ -20,9 +13,8 @@ const ButtonAnatomy = () => {
   }
   return (
     <>
-
-      <div className={`${rocksalt.className} text-center mx-auto`}>
-        <h4 className="rotate-[-7deg] text-sm text-center hidden md:block">Hover Me</h4>
+      <div className={`text-center mx-auto`}>
+        <h4 className=" text-sm text-center hidden md:block">(Hover Me)</h4>
       </div>
       <div className="flex justify-center">
 

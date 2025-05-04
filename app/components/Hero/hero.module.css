@@ -1,5 +1,6 @@
 .header{
-  min-height: 100vh;
+  height: 100vh;
+  height: 100dvh;
   scroll-margin-top: 5rem;
 }
 
@@ -32,6 +33,124 @@
   padding: var(--padding-xs) 0;
 }
 
+.hoverText{
+  position: relative;
+  color: var(--color-primary);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all .25s ease-in-out;
+  will-change: font-style;
+}
+
+.hoverText:hover{
+  font-style: italic;
+}
+
+
+
+.hoverIcon{
+  position: absolute;
+  color: #fff;
+  opacity:0;
+  font-size: 3.6rem;
+  transition: all .25s ease-in-out;
+  padding: .5rem;
+  aspect-ratio: 1;
+  background: #00000080;
+  border-radius: 7px;
+}
+
+
+.astro,
+.three,
+.copilot,
+.vscode{
+  left: 6rem;
+}
+
+.astro{
+  top: -2rem;
+  transition: all .25s ease-in-out;
+}
+.three{
+  top: -4.5rem;
+  transition: all .25s .1s ease-in-out;
+}
+.copilot{
+  top: 6.25rem;
+  transition: all .25s .15s ease-in-out;
+}
+.vscode{
+  top: 4.75rem;
+  transition: all .25s .05s ease-in-out;
+}
+
+.hoverText:hover .astro{
+  opacity:1;
+  top: -4rem;
+  left: -4rem;
+}
+.hoverText:hover .three{
+  opacity:1;
+  top: -6.5rem;
+  left: 1rem;
+}
+.hoverText:hover .copilot{
+  opacity:1;
+  top: 8.25rem;
+  left: 3rem;
+}
+.hoverText:hover .vscode{
+  opacity:1;
+  top: 5.75rem;
+  left: -2rem;
+}
+
+.figma,
+.blender,
+.creativecloud{
+  left: 3rem;
+}
+
+.figma{
+  top: -3rem;
+  transition: all .25s .05s ease-in-out;
+}
+.blender{
+  top: 3.5rem;
+  transition: all .25s .025s ease-in-out;
+}
+.creativecloud{
+  top: 4.5rem;
+  transition: all .25s ease-in-out;
+}
+
+.hoverText:nth-of-type(2):hover .figma{
+  opacity:1;
+  top: -5rem;
+  left: 13rem;
+}
+.hoverText:nth-of-type(2):hover .blender{
+  opacity:1;
+  top: 5rem;
+  left: 6.5rem;
+}
+.hoverText:nth-of-type(2):hover .creativecloud{
+  opacity:1;
+  top: 6.5rem;
+  left: 12rem;
+}
+
+
+.commentTitle{
+    text-align: center;
+    font-size: clamp(1.6rem, 1.2vw + 1.26rem, 1.8rem);
+    font-weight: 600;
+    margin-top: 3.2rem;
+    text-wrap: pretty;
+    letter-spacing: -0.03em;
+  
+}
 
 
 @media screen and (width < 500px) {

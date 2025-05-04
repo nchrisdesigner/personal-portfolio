@@ -25,15 +25,11 @@
 }
 
 .cardInner {
-  background-color: var(--color-bg-dark);
-  backdrop-filter: blur(5px);
   border: 1px solid var(--color-primary);
   background: linear-gradient(var(--color-bg-dark), var(--color-bg-dark)) padding-box,
               linear-gradient(145deg, transparent 35%,var(--color-primary), var(--color-accent-dark)) border-box;
-
   border: 1.5px solid transparent;
   padding: var(--padding-lg) var(--padding-xs);
-  border-radius: 3px;
   display: flex;
   align-items: center;
   animation: both linear serviceCard;
@@ -130,7 +126,7 @@
 
 @keyframes serviceCard {
   to {
-    filter: blur(calc(((var(--num) - var(--i)) * 1px) - 2px));
+    /* filter: blur(calc(((var(--num) - var(--i)) * 1px) - 2px)); */
     transform: scale(calc(1 - (0.015 * (var(--num) - var(--i)))))  rotate(var(--r));
   }
 }

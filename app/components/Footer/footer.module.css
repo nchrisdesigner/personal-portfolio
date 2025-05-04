@@ -1,10 +1,23 @@
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; /* Equivalent to Tailwind's gap-8 */
+}
+
+
+.textSection {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; /* Equivalent to Tailwind's gap-8 */
+}
+
 .footerTitle{
-  font-size: clamp(5.76rem, 1.5227rem + 7vw, 12.2rem);
-  line-height: 1;
+  font-size: clamp(1.6rem, 1rem + 1vw, 2.4rem);
+  font-weight: 600;
 }
 
 .footerMiniTitle{
-  font-size: clamp(1rem, 0.9122rem + 0.7vw, 2.4rem);
+  font-size: 1.2rem;
   font-weight: 600;
 }
 
@@ -18,16 +31,27 @@
 .socialIconsContainer{
   display: flex;
   flex-grow: 1;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1.2rem;
-  /* border: 1px solid white; */
-  /* padding: 2.4rem 6.8rem; */
-  /* background: #00000060; */
-  border-radius: 3px;
-  /* border: 1px dashed hsla(0, 0%, 100%, 0.242); */
 
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.2rem;
+  border-radius: 3px;
   transition-duration: .7s;
-  transition-property: transform,border-top, border-left, border-bottom, border-right,
-    box-shadow;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 2rem; 
+}
+
+.profileSection {
+  display: flex;
+  gap: 1rem; 
+  align-items: center;
+}
+
+.profileTitle {
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
 }
