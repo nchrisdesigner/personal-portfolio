@@ -1,26 +1,10 @@
 'use client'
 import styles from './footer.module.css'
-import { Anton, Rock_Salt, Indie_Flower } from "next/font/google"
 import Github from './components/Github/Github'
 import Linkedin from './components/Linkedin/Linkedin'
 import DownloadCV from './components/DownloadCV/DownloadCV'
 import { useEffect, useState } from 'react'
 
-
-const indie = Indie_Flower({
-  weight: ['400'],
-  subsets: ['latin'],
-})
-
-const anton = Anton({
-  weight: ['400'],
-  subsets: ['latin'],
-})
-
-const rocksalt = Rock_Salt({
-  subsets: ["latin"],
-  weight: ["400"]
-})
 
 const Footer = () => {
   const [theme, setTheme] = useState('dark')
@@ -29,10 +13,10 @@ const Footer = () => {
     document.body.setAttribute("data-theme", theme)
   }, [theme])
 
-  const handleTheme = () => {
-    const newTheme = theme === 'dark' ? 'light' : 'dark'
-    setTheme(newTheme)
-  }
+  // const handleTheme = () => {
+  //   const newTheme = theme === 'dark' ? 'light' : 'dark'
+  //   setTheme(newTheme)
+  // }
 
   return (
     <footer className='section padding'>
@@ -47,8 +31,6 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* <h3 className={styles.footerMiniTitle}>I don't design boring stuff. Promise.</h3> */}
-
         <div className={styles.socialIconsContainer}>
           <div className={styles.socialIcons}>
             <div className={styles.profileSection}>
@@ -57,12 +39,6 @@ const Footer = () => {
               <Linkedin />
               <DownloadCV />
             </div>
-
-{/* 
-            <div className={styles.profileSection}>
-              <h4 className={styles.profileTitle}>Download my cv</h4>
-              <DownloadCV />
-            </div> */}
 
           </div>
 
